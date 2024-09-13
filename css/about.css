@@ -1,0 +1,80 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+}
+
+/* Header styles */
+#header {
+    background-color: #333;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Main styles */
+main {
+    padding: 2rem;
+}
+
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* About section styles */
+#website {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#About {
+    margin-bottom: 1rem;
+}
+
+/* Hamburger menu styles */
+#hambburger {
+    display: none; /* Hidden by default */
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Hide nav links by default on small screens */
+    }
+
+    #hambburger {
+        display: block; /* Show hamburger menu */
+        cursor: pointer;
+    }
+
+    #close {
+        display: none; /* Hide close icon by default */
+        cursor: pointer;
+    }
+
+    nav.active ul {
+        display: flex; /* Show nav links when hamburger menu is active */
+    }
+}
